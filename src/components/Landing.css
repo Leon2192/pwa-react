@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@700&display=swap');
+
+body {
+    background: linear-gradient(97deg, rgba(0, 0, 0, 1) 0%, rgba(51, 51, 51, 1) 35%, rgba(153, 153, 153, 1) 100%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    min-height: 100vh;
+    /*TODO: AGREGO ESTO PARA QUE EL BODY OCUPE TODO EL ALTO DE LA PANTALLA EN VISTA DESKTOP */
+    display: flex;
+    justify-content: center;
+}
+
+.app-logo {
+    margin: 30px;
+    width: 23%;
+}
+
+.titulo-pais {
+    margin: 0px auto 15px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.sb-site-list {
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 25px;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 40px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+.wrapp {
+    padding: 10px 10px 10px 0
+}
+
+.sb-site-sgAR {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgAR :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUBAMAAAAevyJ8AAAAJFBMVEV0rN////+iyOrkvYLz4MnkuHP59fX58eby49jmogvlogvhtW9J8Z7RAAAAOUlEQVQY02NgoAtQQgMMghCQ4g5lQAXETYMTUQQkIlc7ogiIWC1tRBEQMzUuRBEQrHCDGYphLV0AAEFFD3bkn1H9AAAAAElFTkSuQmCC);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgRD {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 286px;
+
+}
+
+.sb-site-sgRD :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUBAMAAABohZD3AAAALVBMVEX////OESYALWKVYFqJj5KvhYl8YFmGt4twsIBTm12Xnqy/mqmDjZausLh4pHemZ7FHAAAAM0lEQVQY02NQAgMFBkZBMGCgNx8CeF0WMCADjqMFKHy+6AkofDYzAygLYowAAxPEYHrzAWxaGEz68a+dAAAAAElFTkSuQmCC);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgUSA {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 268px;
+
+}
+
+.sb-site-sgUSA :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAUCAMAAADWUb86AAAANlBMVEXGWWZ5eJtdQ25tbJI8O25IR3dUU4DZkZqyIjT///+VlbCFhKRgX4mrU2fY1+KaJj+5fpCqqcBFmxQnAAAAh0lEQVQoz8XPSwrDMAxFUau6T0ks9bf/zXYQKBTs4kGhZ6CR0LUbQhAEBOK+DzVchSpK4VI8tqEGqSiZwmXidgw1GaZIWajLaxql406PMnUxjRomEg91PGZRSMLo5+DaxmSk9CRLHfPZGhhR72tff0qS5wNn1y6fZmvHkvZbi9FtSduX/CX6Asb+ET4hHaT8AAAAAElFTkSuQmCC);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgPa {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgPa :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUBAMAAABohZD3AAAALVBMVEXaEhr///8HI1fnX2VXaY3u4+aossXgNTzzrK8FIlZEWYDjTVMsRHArQ29hcpT2wFfDAAAAPUlEQVQY02MQhAABBigggi+Fyhc7eQ1V3vMhKt/VkTTzUfhKEKAIFSeFvxGV387eiMIXZkaVFw4m0XwQAAA54Rku1G10yQAAAABJRU5ErkJggg==);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgHK {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgHK :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAPFBMVEXeKRDzr6bvlIj1vLXtiXvmXkz3ysT////gNh/519P98vH75OHoaFjkTzzobFv75eLiQy7qemvxo5n74+IIgRT7AAAAYUlEQVQYGc3BxwHEMAgEwEUgEZQc+u/1Cjjst2fwHYsNz5Z2vNisB3JVqmlQ8XYiUbU7cfFGWvDPosUYY7mWisTc/Z7DLzw5C8sOQW5q76JXQ8oo3M2VkTIhMVireHPgI35SxQLFFrMRwgAAAABJRU5ErkJggg==);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgCR {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgCR :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAUCAMAAAA0jaRDAAAARVBMVEXzw8jniJPIvprULkHOESbaTFzfZXP///+/yt8AK3/y9fLrzbExfGTTy8LdxJ2Tx95ecWFod5RabZGRv8XljoPhz9hwdUeV0ZjtAAAAVUlEQVQoz2PgJAQYqKGCgxBgYCcEiFBBGLBAASOvKBsLNgBTwcbFxMvFjE8FIxO/MDcrPhUiAjw8YnhVsDIJCfLhtYWFkZsBh0sJA2qEKeGYo0sKAgDUvRBpYm91IQAAAABJRU5ErkJggg==);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgGt {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgGt :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAMAAADbT899AAAASFBMVEWFud/dzZC9warz9fHp7uXO28PV39D///9Jl9CjtZCywJvx6+CinoTk6eH09vTy56GbnWfDvqLN1sSLo3Li2MiZrYXJzbzgyXVy1B4lAAAAT0lEQVQoz2PggAMGdjhgQBIdhgqY2cU42VlxK2Dh5BZnFOJkw6mAV5SPn5+Vkw+3CVwijIycwsy43cAjyMvGw8SCWwE3FyubANOwjwssCgDQRBJzOq+o8wAAAABJRU5ErkJggg==);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgSv {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgSv :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAUCAMAAAAweHR+AAAASFBMVEUAR6uFyHSu1bWjyrb//O//+d/688b///9AdcA/dL9ssabh5ubD5beg15XY1KU/p5XCxqmayqCvw+R/t6zh4cT+7+9Lpm/x5Km6x9JjAAAASUlEQVQYGd3BOQKAIBADwAC7REHF2///1DoVPTMY1dwHKrPsRgWqXL96GwUoLO7PdjgFKKy0t1xUoPCQzhiMAlR5TYtTYerDoH7d9Qhg0Bl2HgAAAABJRU5ErkJggg==);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgHn {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgHn :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUBAMAAAANaGKIAAAAG1BMVEUAc8////9Vot/g7fnv9vx9t+YSfdPS5fao0O4m4Cd/AAAAQUlEQVQY02NgGFCghAUwCEJAI4iQgHKggsIpINLNEEUQCEQD4UyYoCFIUARVUDwZRJoVogiKgLnijlBBrE4aUAAAhVoQix6fUHcAAAAASUVORK5CYII=);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgPy {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgPy :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAUBAMAAAAXVIIGAAAALVBMVEUAOKj////VKx5Aar7fYFbj5OP29vb19fXR0dHL58HZ69ehsKa4vbmkxLDFz8hyxGD0AAAAOElEQVQY02NQwgAMNBZywQAMglBQGgZjwYTEe94UogmJ7pwbiCG0Fl1IrHVFIpoQsvHGGICB7gAAgAolUQU54u0AAAAASUVORK5CYII=);
+    background-position: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-sgUr {
+    display: inline-block;
+    color: #333;
+    margin: 0 auto;
+    max-width: 200px;
+
+}
+
+.sb-site-sgUr :before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAXVBMVEX///+8iyTXpg348+oAOKiqvOL8+/s5ZLsdTrGOptjNrGjcwXy9ihT39PLu486xfQ/BlCnRr13t5OLex5LIlQpPdcPPsHPw6NbFnU3l0qq+lEabsd3k0LK0xOU2Yrr+si7LAAAAdElEQVQYGaXBVxaCMABFwZvCIyS0APay/2XqfzScozPskxzim3FJ6SgHh7YA6Gpmc15E8AVQnCfb96u4dQVwcbLW9unER7qYbbMmOh5NAbTmeTJ5EMEXgGHIMd1HeIYCb3KjHD8JVfgqmip2dFX4Ktoq/vICNZcKOtOuTo0AAAAASUVORK5CYII=);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 15px;
+    position: absolute;
+    top: 16px;
+    width: 30px
+}
+
+.sb-site-link {
+    border-right: 1px dotted #cecece
+}
+
+.sb-site-link,
+.sb-site-linklast {
+    color: #fff;
+    display: block;
+    font-weight: bolder;
+    padding: 15px 18px 15px 55px;
+    position: relative;
+    text-decoration: none
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+/* TODO: MOBILE VERSION */
+
+@media (max-width: 768px) {
+
+    body {
+        background: #504f4f;
+    }
+
+    .app-logo {
+        margin: 30px;
+        width: 50%;
+    }
+
+    .titulo-pais {
+        font-size: 22px;
+    }
+
+    .sb-site-list {
+        background: none;
+        border: none;
+        font-size: 21.8px;
+        text-align: left;
+    }
+
+    .sb-site-link,
+    .sb-site-linklast {
+        border-right: none;
+        min-width: 300px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        display: none;
+    }
+}

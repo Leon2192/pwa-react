@@ -17,28 +17,28 @@ const Landing = () => {
         nivel internacional tales como: AMD, APC, DELL, INTEL, HUAWEI, CISCO,
         DELL TECHNOLOGIES, HP, HPE, SAMSUNG, FIBERHOME, PANDUIT, entre otras.
       </h6>
-      <br></br>
+
       <h6>
         Nuestro espíritu y fuerza están basadas en la capacitación constante al
         canal, y el acompañamiento a cada uno de sus proyectos con especialistas
         en cada marca e ingenieros que sabrán guiarlos para lograr los mejores
         resultados.
       </h6>
-      <br></br>
+
       <h6>
         Gracias a la regionalización de nuestra empresa, logramos excelentes
         alianzas donde nos permiten tener stock permanente de nuestras marcas y
         perspectivas de crecimiento constante.
       </h6>
-      <br></br>
+
       <h6>
         Nuestro logro mas reciente fue la creación de nuestra marca propia para
         pc, pc gamer y notebook! Te invitamos a que nos conozcas y siguas en
         redes @nsxcomputers.
       </h6>
-      <br></br>
+
       <h6>
-        Contamos con oficinas comerciales y depósitos<br></br>
+        Contamos con oficinas comerciales y depósitos
       </h6>
 
       <ul className="sb-site-list">

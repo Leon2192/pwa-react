@@ -52,13 +52,13 @@ const Blur = (props) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             {...props}>
-            <circle cx="71" cy="61" r="111" fill="#F56565" />
-            <circle cx="244" cy="106" r="139" fill="#ED64A6" />
-            <circle cy="291" r="139" fill="#ED64A6" />
-            <circle cx="80.5" cy="189.5" r="101.5" fill="#ED8936" />
-            <circle cx="196.5" cy="317.5" r="101.5" fill="#ECC94B" />
-            <circle cx="70.5" cy="458.5" r="101.5" fill="#48BB78" />
-            <circle cx="426.5" cy="-0.5" r="101.5" fill="#4299E1" />
+            <circle cx="71" cy="61" r="111" />
+            <circle cx="244" cy="106" r="139" />
+            <circle cy="291" r="139" />
+            <circle cx="80.5" cy="189.5" r="101.5" />
+            <circle cx="196.5" cy="317.5" r="101.5" />
+            <circle cx="70.5" cy="458.5" r="101.5" />
+            <circle cx="426.5" cy="-0.5" r="101.5" />
         </Icon>
     )
 }
@@ -73,7 +73,7 @@ export default function Main() {
     };
 
     return (
-        <Box position={'relative'} bg={'gray.100'}>
+        <Box position={'relative'} bg={'red.500'}>
             <Container
                 as={SimpleGrid}
                 maxW={'7xl'}
@@ -82,17 +82,18 @@ export default function Main() {
                 py={{ base: 10, sm: 20, lg: 30 }}>
                 <Stack spacing={{ base: 10, md: 20 }} px={{ md: 10, lg: 20 }}>
                     <Heading
+                        color={'white'}
                         lineHeight={1.1}
                         fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}>
                         Bienvenidos a Solution Box
                         <Heading
-                            color={'blue.500'}
+                            color={'#ffcb77'}
                             lineHeight={1.1}
                             fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}>
                             Mayorista de informática y telecomunicaciones
                         </Heading>
 
-                        <Text color={'gray.600'} pt={'3'} fontSize={{ base: 'sm', sm: 'md' }}>
+                        <Text color={'white'} pt={'3'} fontSize={{ base: 'sm', sm: 'md' }}>
                             Somos un mayorista con origen en Argentina y una trayectoria de 20 años.
                             Contamos con 11 sedes y representamos a más de 50 marcas internacionales
                             como AMD, DELL, INTEL, HUAWEI, CISCO, HP, SAMSUNG, entre otras.

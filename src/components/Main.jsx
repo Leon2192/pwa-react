@@ -87,7 +87,7 @@ export default function Main() {
                         fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}>
                         Bienvenidos a Solution Box
                         <Heading
-                            color={'#ffcb77'}
+                            color={'#9cf6f6'}
                             lineHeight={1.1}
                             fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}>
                             Mayorista de informática y telecomunicaciones

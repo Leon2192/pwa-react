@@ -1,0 +1,49 @@
+{
+    "countries": [
+        {
+            "name": "Argentina",
+            "url": "https://www.solutionbox.com.ar/"
+        },
+        {
+            "name": "Uruguay",
+            "url": "https://www.solutionbox.com.uy/"
+        },
+        {
+            "name": "Paraguay",
+            "url": "https://www.solutionbox.com.py/"
+        },
+        {
+            "name": "República Dominicana",
+            "url": "https://www.solutionbox.com.do/"
+        },
+        {
+            "name": "Costa Rica",
+            "url": "https://www.solutionbox.cr/"
+        },
+        {
+            "name": "El Salvador",
+            "url": "https://www.solutionbox.com.sv/"
+        },
+        {
+            "name": "Honduras",
+            "url": "https://www.solutionbox.com.hn/"
+        },
+        {
+            "name": "EEUU",
+            "url": "https://www.solutionboxusa.com/"
+        },
+        {
+            "name": "Panamá",
+            "url": "https://www.solutionbox.com.pa/"
+        },
+        {
+            "name": "Hong Kong",
+            "url": "https://www.solutionbox.com.hk/"
+        },
+        {
+            "name": "Guatemala",
+            "url": "https://www.solutionbox.com.gt/"
+        }
+    ]
+}
+

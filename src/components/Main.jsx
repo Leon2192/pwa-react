@@ -174,9 +174,15 @@ export default function Main() {
                         <Box as={'form'} mt={10}>
                             <Stack spacing={4}>
                                 <Center>
-                                    <Text color={'gray.900'} fontSize={{ base: 'xl', sm: 'lg' }}>
-                                        ¿A qué sucursal deseas acceder?
-                                    </Text>
+                                    <Heading
+                                        bgGradient="linear(to-r, red.400,pink.400)" bgClip="text"
+                                        textAlign={'center'}
+                                        lineHeight={1.1}
+                                        fontSize={{ base: '4xl', sm: '3xl', md: '3xl' }}
+                                    >
+                                        ¿A que sucursal quieres acceder?
+                                    </Heading>
+
                                 </Center>
                                 <Select
                                     placeholder="Por favor, selecciona tu país"

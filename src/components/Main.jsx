@@ -45,13 +45,13 @@ const avatars = [
 const Blur = (props) => {
     return (
         <Icon
-        width={useBreakpointValue({ base: "100%", md: "40vw", lg: "30vw" })}
-        zIndex={useBreakpointValue({ base: -1, md: -1, lg: 0 })}
-        height="560px"
-        viewBox="0 0 528 560"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        {...props}>
+            width={useBreakpointValue({ base: "100%", md: "40vw", lg: "30vw" })}
+            zIndex={useBreakpointValue({ base: -1, md: -1, lg: 0 })}
+            height="560px"
+            viewBox="0 0 528 560"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            {...props}>
             <circle cx="71" cy="61" r="111" />
             <circle cx="244" cy="106" r="139" />
             <circle cy="291" r="139" />
@@ -73,7 +73,7 @@ export default function Main() {
     };
 
     return (
-        <Box position={'relative'} bg={'red.500'}>
+        <Box position={'relative'} bg={'#0d1b2a'}>
             <Container
                 as={SimpleGrid}
                 maxW={'7xl'}
@@ -85,7 +85,10 @@ export default function Main() {
                         color={'white'}
                         lineHeight={1.1}
                         fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}>
-                        Bienvenidos a Solution Box
+                        Bienvenidos a {' '}
+                        <Text as={'span'} bgGradient="linear(to-r, red.400,pink.400)" bgClip="text">
+                            Solution Box
+                        </Text>{' '}
                         <Heading
                             color={'#9cf6f6'}
                             lineHeight={1.1}

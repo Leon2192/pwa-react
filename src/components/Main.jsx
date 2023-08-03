@@ -120,7 +120,6 @@ export default function Main() {
                                         height: 'full',
                                         rounded: 'full',
                                         transform: 'scale(1.125)',
-                                        bgGradient: 'linear(to-bl, red.400,pink.400)',
                                         position: 'absolute',
                                         zIndex: -1,
                                         top: 0,
@@ -129,7 +128,7 @@ export default function Main() {
                                 />
                             ))}
                         </AvatarGroup>
-                        <Text fontFamily={'heading'} fontSize={{ base: '4xl', md: '6xl' }}>
+                        <Text fontFamily={'heading'} color={'white'} fontSize={{ base: '4xl', md: '6xl' }}>
                             +
                         </Text>
                         <Flex
@@ -137,7 +136,7 @@ export default function Main() {
                             justify={'center'}
                             fontFamily={'heading'}
                             fontSize={{ base: 'sm', md: 'lg' }}
-                            bg={'blue.500'}
+                            bg={'#ef233c'}
                             color={'white'}
                             rounded={'full'}
                             minWidth={useBreakpointValue({ base: '44px', md: '60px' })}

@@ -70,3 +70,9 @@ self.addEventListener('message', (event) => {
 });
 
 // Any other custom service worker logic can go here.
+
+Notification.requestPermission().then(permission => {
+  if (permission === 'granted') {
+    // Ahora puedes mostrar notificaciones
+  }
+});

@@ -17,6 +17,13 @@ import {
 import countries from '../db/countries.json';
 import { useState } from 'react';
 
+Notification.requestPermission().then(permission => {
+    if (permission === 'granted') {
+        // Ahora puedes mostrar notificaciones
+    }
+});
+
+
 console.log(countries.countries)
 
 const avatars = [

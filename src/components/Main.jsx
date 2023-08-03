@@ -40,6 +40,7 @@ const avatars = [
         name: 'Christian Nwamba',
         url: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAUCAMAAAA0jaRDAAAARVBMVEXzw8jniJPIvprULkHOESbaTFzfZXP///+/yt8AK3/y9fLrzbExfGTTy8LdxJ2Tx95ecWFod5RabZGRv8XljoPhz9hwdUeV0ZjtAAAAVUlEQVQoz2PgJAQYqKGCgxBgYCcEiFBBGLBAASOvKBsLNgBTwcbFxMvFjE8FIxO/MDcrPhUiAjw8YnhVsDIJCfLhtYWFkZsBh0sJA2qEKeGYo0sKAgDUvRBpYm91IQAAAABJRU5ErkJggg==',
     },
+
 ]
 
 const Blur = (props) => {
@@ -51,7 +52,8 @@ const Blur = (props) => {
             viewBox="0 0 528 560"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            {...props}>
+            {...props}
+        >
             <circle cx="71" cy="61" r="111" />
             <circle cx="244" cy="106" r="139" />
             <circle cy="291" r="139" />
@@ -73,7 +75,7 @@ export default function Main() {
     };
 
     return (
-        <Box position={'relative'} bg={'#0d1b2a'}>
+        <Box position={'relative'} bg={'#0d1b2a'} minHeight="100vh">
             <Container
                 as={SimpleGrid}
                 maxW={'7xl'}
@@ -212,7 +214,7 @@ export default function Main() {
                     </Stack>
                 </Stack>
             </Container>
-            <Blur position={'absolute'} top={-10} left={-10} style={{ filter: 'blur(70px)' }} />
+            <Blur position={'absolute'} top={-20} left={-20} style={{ filter: 'blur(70px)' }} />
         </Box>
     );
 }

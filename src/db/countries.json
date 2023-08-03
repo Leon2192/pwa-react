@@ -9,10 +9,6 @@
             "url": "https://www.solutionbox.cr/"
         },
         {
-            "name": "EEUU",
-            "url": "https://www.solutionboxusa.com/"
-        },
-        {
             "name": "El Salvador",
             "url": "https://www.solutionbox.com.sv/"
         },
@@ -39,6 +35,10 @@
         {
             "name": "República Dominicana",
             "url": "https://www.solutionbox.com.do/"
+        },
+        {
+            "name": "United States",
+            "url": "https://www.solutionboxusa.com/"
         },
         {
             "name": "Uruguay",

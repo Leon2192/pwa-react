@@ -57,4 +57,43 @@ self.addEventListener('message', (event) => {
   }
 });
 
-// Código relacionado con notificaciones movido a tu aplicación de React
+self.addEventListener('beforeinstallprompt', (event) => {
+  // Evitar que el navegador maneje automáticamente la instalación
+  event.preventDefault();
+
+  // Guardar el evento para usarlo más tarde
+  self.deferredPrompt = event;
+
+  // Opcionalmente, puedes mostrar tu propio mensaje de instalación aquí
+});
+
+// Agrega el evento beforeinstallprompt en el Service Worker
+self.addEventListener('beforeinstallprompt', (event) => {
+  // Evitar que el navegador maneje automáticamente la instalación
+  event.preventDefault();
+
+  // Enviar un mensaje a la aplicación para manejar el banner de instalación
+  self.clients.matchAll().then((clients) => {
+    if (clients && clients.length) {
+      clients[0].postMessage({ type: 'showInstallBanner' });
+    }
+  });
+});
+
+// Manejo de eventos de push para mostrar notificaciones
+self.addEventListener('push', event => {
+  const options = {
+    body: event.data.text(),
+    icon: `${process.env.PUBLIC_URL}/logo192.png`, // Ruta a tu icono de notificación
+  };
+
+  event.waitUntil(
+    self.registration.showNotification('Título de la Notificación', options)
+  );
+});
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});

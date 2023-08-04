@@ -57,7 +57,7 @@ self.addEventListener('message', (event) => {
   }
 });
 
-self.addEventListener('beforeinstallprompt', (event) => {
+/*self.addEventListener('beforeinstallprompt', (event) => {
   // Evitar que el navegador maneje automáticamente la instalación
   event.preventDefault();
 
@@ -78,7 +78,7 @@ self.addEventListener('beforeinstallprompt', (event) => {
       clients[0].postMessage({ type: 'showInstallBanner' });
     }
   });
-});
+});*/
 
 // Manejo de eventos de push para mostrar notificaciones
 self.addEventListener('push', event => {
@@ -96,4 +96,27 @@ self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
+});
+
+// Agrega el evento beforeinstallprompt en el Service Worker
+self.addEventListener('beforeinstallprompt', (event) => {
+  // Evitar que el navegador maneje automáticamente la instalación
+  event.preventDefault();
+
+  // Enviar un mensaje a la aplicación para manejar el banner de instalación
+  self.clients.matchAll().then((clients) => {
+    if (clients && clients.length) {
+      clients[0].postMessage({ type: 'showInstallBanner' });
+
+      // Solicitar el permiso de notificación en respuesta a un clic del usuario
+      const installButton = document.createElement('button');
+      installButton.innerText = 'Instalar';
+      installButton.addEventListener('click', () => {
+        event.prompt();
+      });
+
+      // Agregar el botón al DOM
+      document.body.appendChild(installButton);
+    }
+  });
 });

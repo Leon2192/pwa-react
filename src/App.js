@@ -26,6 +26,29 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    // Verificar si el navegador es compatible con el Web App Manifest y el Service Worker
+    if ('serviceWorker' in navigator && 'PushManager' in window) {
+      // Registrar el Service Worker en la raíz de tu sitio
+      navigator.serviceWorker
+        .register('service-worker.js')
+        .then(registration => {
+          // Tu Service Worker está registrado correctamente
+          console.log('Service Worker registrado correctamente: ', registration);
+
+          // Verificar la resolución de pantalla para mostrar la notificación
+          if (window.matchMedia('(max-width: 768px)').matches) {
+            // Muestra la notificación de "Agregar a pantalla de inicio"
+            // Puedes usar el método 'beforeinstallprompt' o alguna otra lógica para mostrar la notificación adecuadamente
+          }
+        })
+        .catch(error => {
+          // Ocurrió un error al registrar el Service Worker
+          console.error('Error al registrar el Service Worker: ', error);
+        });
+    }
+  }, []);
+
   return (
     <ChakraProvider>
       <BrowserRouter>

@@ -36,6 +36,16 @@ registerRoute(
   })
 );
 
+self.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
+  self.clients.matchAll().then((clients) => {
+    if (clients && clients.length) {
+      clients[0].postMessage({ type: 'showInstallBanner' });
+    }
+  });
+});
+
+
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();

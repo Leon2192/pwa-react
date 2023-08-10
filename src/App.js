@@ -3,8 +3,13 @@ import LandingEN from "./components/LandingEN";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./components/Main";
 import { ChakraProvider } from "@chakra-ui/react"; // Cambia la importación aquí
+import { registerServiceWorker } from "./serviceWorkerRegistration";
 
 function App() {
+
+  useEffect(() => {
+    registerServiceWorker();
+  }, []);
 
   useEffect(() => {
     navigator.serviceWorker.addEventListener('message', (event) => {
